@@ -236,7 +236,9 @@ body {
     cursor: pointer;
 }
 
+/* about section css */
 .about {
+    position: relative;
     background: url('../images/about-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -244,12 +246,21 @@ body {
     padding: 60px 0;
 }
 
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    width: 100%;
+    height: 100%;
+}
+
 .about-content  {
     margin: 0 auto;
     max-width: 626px;
 }
 
-.about-content .desc {
+.about-content .sub-title {
     margin: 0 auto;
     max-width: 502px;
     font-size: 24px;
@@ -263,7 +274,7 @@ body {
     font-size: 48px;
     line-height: 58px;
     color: var(--primary-color);
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
@@ -271,7 +282,7 @@ body {
     gap: 60px;
 }
 
-
+/* mobile responsive css */
 @media screen and (max-width: 992px) {
     .header .navbar .nav-toggler {
         display: block;
@@ -321,5 +332,25 @@ body {
     .hero .hero-desc {
         padding: 0 9px;
         margin: 0 0 8px;
+    }
+
+    .about-content  {
+        max-width: 327px;
+    }
+    
+    .about-content .sub-title {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 30px;
+    }
+    
+    .about-content .title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 50px;
+    }
+    
+    .about-content .badges {
+        gap: 60px;
     }
 }
