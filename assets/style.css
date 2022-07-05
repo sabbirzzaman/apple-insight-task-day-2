@@ -234,3 +234,55 @@ body {
     padding: 10px 15px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 992px) {
+    .header .navbar .nav-toggler {
+        display: block;
+    }
+
+    /* hero styling */
+    .hero {
+        position: relative;
+        background: none;
+        padding: 90px 0 170px 0;
+    }
+
+    .hero::before {
+        background-position: 100% 100px;
+        background-size: 50%;
+    }
+
+    .hero::after {
+        background-position: 0 85%;
+        z-index: -1;
+    }
+
+    .hero .row {
+        gap: 50px;
+    }
+
+    .hero .col-sm-12:nth-child(1) {
+        text-align: center;
+        order: 2;
+    }
+
+    .hero .col-sm-12:nth-child(2) {
+        order: 1;
+    }
+
+    .hero .main-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--dark);
+        margin: 0 0 12px;
+    }
+
+    .hero .main-title span {
+        color: var(--primary-color);
+    }
+
+    .hero .hero-desc {
+        padding: 0 9px;
+        margin: 0 0 8px;
+    }
+}
