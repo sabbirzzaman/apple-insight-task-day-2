@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Insight</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- link bootstrap cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+
+        <!-- link custom css -->
+        <link rel="stylesheet" href="./assets/style.css" />
+
+        <!-- site title -->
+        <title>Apple Insight</title>
+    </head>
+    <body>
+        <!-- header section starts -->
+        <header class="header position-absolute w-100">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand d-none d-md-block" href="#">
+                        <img src="./images/logo.svg" alt="logo" />
+                    </a>
+
+                    <button
+                        type="button"
+                        class="nav-toggler border-0 bg-transparent"
+                    >
+                        <img src="./images/hamburger.png" alt="hamburger">
+                    </button>
+
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav text-uppercase">
+                            <li class="nav-item active">
+                                <a class="nav-link position-relative" href="#"
+                                    >Home
+                                    <span class="sr-only">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link position-relative dropdown-toggle d-flex align-items-center"
+                                    href="#"
+                                    id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >Industries 
+                                    <img src="./images/down-arrow.png" alt="down arrow">
+                                    </a
+                                >
+                                <div
+                                    class="dropdown-menu text-normal border-0"
+                                    aria-labelledby="navbarDropdownMenuLink"
+                                >
+                                    <span>Technology and</span>
+                                    <p>
+                                        Software Consumer Products and Insights
+                                    </p>
+                                    <p>Marketing and Ad-Ops</p>
+                                    <p>E-Commerce</p>
+                                    <p>HR and Recruiting</p>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link position-relative"
+                                    >Contact us</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- header section end -->
+
+        <!-- Mobile Navigation -->
+        <section class="offcanvas">
+            <div class="overlay"></div>
+            <div class="offcanvas-container">
+                <div
+                    class="offcanvas-top d-flex align-items-center justify-content-between"
+                >
+                    <p class="text-uppercase m-0 text-light">Menu</p>
+                    <svg
+                        class="close"
+                        width="13"
+                        height="12"
+                        viewBox="0 0 13 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1.94975 1.05025L11.8492 10.9497M1.94975 10.9497L11.8492 1.05025"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-uppercase">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                                >Home <span class="sr-only">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdownMenuLink"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Industries</a
+                            >
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdownMenuLink"
+                            >
+                                Technology and
+                                <br /><span
+                                    >Software Consumer Products and Insights
+                                    Marketing and Ad-Ops <br />
+                                    E-Commerce
+                                    <br />
+                                    HR and Recruiting</span
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Mobile Navigation -->
+
+        <!-- Link Js File -->
+        <script src="./assets/app.js"></script>
+
+        <!-- bootstrap js cdn -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
