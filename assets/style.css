@@ -150,7 +150,7 @@ body {
 
 .offcanvas .offcanvas-top {
     padding: 20px 0;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid var(--dark);
 }
 
 .offcanvas .offcanvas-body {
@@ -168,6 +168,7 @@ body {
 
 /* hero section css */
 .hero {
+    height: 100vh;
     padding: 150px 0 300px 0;
     background: url('../images/bg-pattern.png');
     background-repeat: no-repeat;
@@ -234,6 +235,42 @@ body {
     padding: 10px 15px;
     cursor: pointer;
 }
+
+.about {
+    background: url('../images/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.about-content  {
+    margin: 0 auto;
+    max-width: 626px;
+}
+
+.about-content .desc {
+    margin: 0 auto;
+    max-width: 502px;
+    font-size: 24px;
+    color: var(--white);
+    line-height: 29px;
+    font-weight: 900;
+    margin-bottom: 34px;
+}
+
+.about-content .title {
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--primary-color);
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.about-content .badges {
+    gap: 60px;
+}
+
 
 @media screen and (max-width: 992px) {
     .header .navbar .nav-toggler {
