@@ -380,6 +380,11 @@ body {
 
 /* mobile responsive css */
 @media screen and (max-width: 992px) {
+    .container,.services .container {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
     .header .navbar .nav-toggler {
         display: block;
     }
@@ -388,7 +393,8 @@ body {
     .hero {
         position: relative;
         background: none;
-        padding: 90px 0 170px 0;
+        padding: 90px 0 50px 0;
+        height: 100%;
     }
 
     .hero::before {
@@ -403,6 +409,10 @@ body {
 
     .hero .row {
         gap: 50px;
+    }
+
+    .hero img {
+        width: 100%;
     }
 
     .hero .col-sm-12:nth-child(1) {
@@ -430,8 +440,8 @@ body {
         margin: 0 0 8px;
     }
 
-    .about-content  {
-        max-width: 327px;
+    .about img {
+        width: 100%;
     }
     
     .about-content .sub-title {
@@ -447,7 +457,7 @@ body {
     }
     
     .about-content .badges {
-        gap: 60px;
+        gap: 40px;
     }
 
     .services {
